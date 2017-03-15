@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+cd Beamer && rm *pdf *toc *snm *nav *log *aux *out
