@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+wget http://www.quantum-espresso.org/wp-content/uploads/upf_files/O.pz-rrkjus.UPF
+wget http://www.quantum-espresso.org/wp-content/uploads/upf_files/C.pz-rrkjus.UPF
