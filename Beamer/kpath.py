@@ -8,7 +8,9 @@ ip = ibz_points["cubic"]
 points = [ "Gamma", "X", "M", "Gamma"]
 path = [ip[p] for p in points]
 print(xtal.cell)
-kpts, x, X = get_bandpath(path, xtal.cell, npoints = 200)
+kpts, x, X = get_bandpath(path, 
+                          xtal.cell, 
+                          npoints = 200)
 
 print(kpts)
 print(x)
