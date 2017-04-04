@@ -2,6 +2,7 @@
 import os
 import numpy as np
 from matplotlib import pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 
 results = []
 
@@ -18,7 +19,11 @@ for d, dn, fn in os.walk("."):
             except:
                 pass
 
-for i in range(len(results)):
-    for j in range(len(results)):
-        X[i,j] = 
-plt.plot_wireframe(
+X, Y, Z = np.array(results).T
+print(X)
+print(Y)
+print(Z)
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter(X,Y,Z)
