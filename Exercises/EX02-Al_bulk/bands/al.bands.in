@@ -2,7 +2,7 @@
     calculation = 'bands'
     prefix      = 'aluminium'
     outdir      = 'outdir',
-    pseudo_dir  = '/home/kohulak/pseudo/'
+    pseudo_dir  = '../PP'
  /
  &system
     ibrav     = 2,

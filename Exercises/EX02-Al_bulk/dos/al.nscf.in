@@ -2,7 +2,7 @@
   calculation  = 'nscf',
   prefix       = 'aluminium',
   outdir       = 'outdir',
-  pseudo_dir   = '/home/kohulak/pseudo/'
+  pseudo_dir   = '../PP'
   disk_io      = 'low'
   tstress      = .true.
   tprnfor      = .true.
