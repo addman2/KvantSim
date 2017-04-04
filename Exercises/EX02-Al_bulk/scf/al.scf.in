@@ -1,7 +1,7 @@
  &control
     calculation  = 'scf'
     restart_mode = 'from_scratch',
-    pseudo_dir   = '/home/kohulak/pseudo/',
+    pseudo_dir   = '../PP',
     outdir       = 'outdir',
     prefix       = 'aluminium'
     tprnfor      = .true.
