@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+wget http://www.quantum-espresso.org/wp-content/uploads/upf_files/Ge.pz-dn-kjpaw_psl.0.2.2.UPF
+wget http://www.quantum-espresso.org/wp-content/uploads/upf_files/Ge.pbe-dn-kjpaw_psl.0.2.2.UPF
