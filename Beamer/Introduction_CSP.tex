@@ -1,0 +1,48 @@
+\documentclass{beamer}
+
+\usepackage{hyperref}
+\usepackage{amsfonts}
+\usepackage{listings}
+%\usepackage{cite}
+
+\usepackage[backend=biber]{biblatex}
+\bibliography{bib.bib}
+
+%\setbeamertemplate{bibliography item}{}
+
+\begin{document}
+
+\title{Introduction to CSP}   
+\author{Otto Kohul\'{a}k \newline kohulak@fmph.uniba.sk} 
+\date{\today} 
+
+\frame{\titlepage} 
+
+\begin{frame}
+  \frametitle{What is Crystal Structure prediction?}
+  \begin{itemize}
+    \item It is searching for stable or metastable crystal structure at given thermodynamic conditions
+    \item Or searching for local extrem in some thermodynamic potential (e.g. Gibbs: $ G = E(\mathbb{X}) + pV(\mathbb{X}) - TS(\mathbb{X}) $)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Order parameters}
+  \begin{itemize}
+    \item Unit cell (9 parameters in general) + basis (3 * N parameters in general)
+    \item If we consider translation a rotational invariance of Hamiltonian (3 * N + 3 parameters)
+    \item Minimum distance parametrization \cite{pauschenwein2009}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Direct Search}
+\end{frame}
+
+\printbibliography
+
+%\bibliography{bib}{}
+%\bibliographystyle{plain}
+
+\end{document}
+
