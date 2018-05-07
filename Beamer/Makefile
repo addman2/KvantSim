@@ -9,6 +9,7 @@ hellomake: $(OBJ)
 	$(B) Introduction_CSP
 	$(C) Introduction_CSP.tex
 	$(C) Introduction_CSP.tex
+	$(C) Skills.tex
 
 .PHONY: clean
 
