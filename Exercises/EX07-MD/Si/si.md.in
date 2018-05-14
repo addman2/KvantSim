@@ -1,0 +1,55 @@
+ &control
+    title        = "Molecular dynamics of Si at 0 kBar",
+    prefix       = "Si",
+    calculation  = "vc-md",
+    restart_mode = "from_scratch",
+    nstep        = 100,
+    dt           = 41.348,
+    outdir       = "calc",
+    pseudo_dir   = "../PP/"
+ /
+ &system
+    ibrav       = 0,
+    nat         = 8,
+    ntyp        = 1,
+    nbnd        = 32,
+    ecutwfc     = 18,
+    nosym       = .TRUE.,
+    occupations = "smearing",
+    smearing    = "gauss",
+    degauss     = 0.05,
+ /
+ &electrons
+    conv_thr    = 5.D-4,
+    mixing_beta = 0.5
+ /
+ &ions
+    ion_dynamics      = "beeman",
+    wfc_extrapolation = "second_order",
+    ion_temperature   = "berendsen",
+    tempw             = 350
+ /
+ &cell
+    cell_dynamics     = "pr",
+    press             = 0.0,
+    cell_factor       = 1.5,
+    cell_dofree       = "all"
+ /
+CELL_PARAMETERS angstrom
+     5.4299999999999997    0.0000000000000000    0.0000000000000000
+     0.0000000000000000    5.4299999999999997    0.0000000000000000
+     0.0000000000000000    0.0000000000000000    5.4299999999999997
+ATOMIC_SPECIES
+Si 1.0 Si.pz-vbc.UPF
+ATOMIC_POSITIONS angstrom
+Si  0.0000000000000000  0.0000000000000000  0.0000000000000000
+Si  1.3574999999999999  1.3574999999999999  1.3574999999999999
+Si  2.7149999999999999  2.7149999999999999  0.0000000000000000
+Si  4.0724999999999998  4.0724999999999998  1.3574999999999999
+Si  2.7149999999999999  0.0000000000000000  2.7149999999999999
+Si  4.0724999999999998  1.3574999999999999  4.0724999999999998
+Si  0.0000000000000000  2.7149999999999999  2.7149999999999999
+Si  1.3574999999999999  4.0724999999999998  4.0724999999999998
+K_POINTS automatic
+3 3 3 0 0 0
+
